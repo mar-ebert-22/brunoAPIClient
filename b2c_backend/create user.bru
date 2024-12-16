@@ -1,0 +1,26 @@
+meta {
+  name: create user
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseURL}}/user
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "dummymail@gmail.com", 
+    "username": "JohnD", 
+    "firstName": "John", 
+    "lastName": "Doe", 
+    "password": "123456789", 
+    "role": "customer", 
+    "street": "Musterstraße 6", 
+    "city": "Musterstadt", 
+    "postalCode": "123456", 
+    "country": "Germany"
+  }
+}
