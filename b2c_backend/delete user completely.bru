@@ -1,0 +1,16 @@
+meta {
+  name: delete user completely
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseURL}}/user/delete?email=tobias@tesmail.de&password=12345678
+  body: none
+  auth: none
+}
+
+params:query {
+  email: tobias@tesmail.de
+  password: 12345678
+}

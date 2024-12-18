@@ -1,10 +1,10 @@
 meta {
-  name: logout user
+  name: user login
   type: http
-  seq: 4
+  seq: 8
 }
 
-delete {
+post {
   url: {{baseURL}}/user
   body: json
   auth: none
@@ -12,6 +12,7 @@ delete {
 
 body:json {
   {
-    "token": "dummyToken123"
+    "email": "tobias@test.de",
+    "password": "12345678"
   }
 }

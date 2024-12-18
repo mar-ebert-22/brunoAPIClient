@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{baseURL}}/user
+  url: {{baseURL}}/user/create
   body: json
   auth: none
 }
@@ -17,7 +17,6 @@ body:json {
     "firstName": "John", 
     "lastName": "Doe", 
     "password": "123456789", 
-    "role": "customer", 
     "street": "Musterstraße 6", 
     "city": "Musterstadt", 
     "postalCode": "123456", 

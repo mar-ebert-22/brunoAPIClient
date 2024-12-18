@@ -1,0 +1,22 @@
+meta {
+  name: create a single book
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{baseURL}}/book
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "isbn": "321454885",
+    "title": "Rubinrot",
+    "author": "Kerstin Gier",
+    "publication": "2011",
+    "publisher": "Springer",
+    "price": "15,99"
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: delete Book by ISBN
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseURL}}/book/delete?isbn=testisbn
+  body: none
+  auth: none
+}
+
+params:query {
+  isbn: testisbn
+}
