@@ -1,0 +1,17 @@
+meta {
+  name: create shoppingcart
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{baseURL}}/shoppingcart
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "userEmail": "selina_fehn@web.de"
+  }
+}
