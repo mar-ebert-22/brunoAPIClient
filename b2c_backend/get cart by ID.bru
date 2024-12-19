@@ -1,11 +1,15 @@
 meta {
-  name: get cart by ID 
+  name: get cart by ID
   type: http
   seq: 15
 }
 
 get {
-  url: {{baseURL}}/shoppingcart
+  url: {{baseURL}}/shoppingcart?cartID=34
   body: none
   auth: none
+}
+
+params:query {
+  cartID: 34
 }
