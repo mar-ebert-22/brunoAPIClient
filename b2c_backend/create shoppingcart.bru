@@ -5,13 +5,17 @@ meta {
 }
 
 post {
-  url: {{baseURL}}/shoppingcart
-  body: json
+  url: {{baseURL}}/shoppingcart?userEmail=tobias@test2.de
+  body: none
   auth: none
+}
+
+params:query {
+  userEmail: tobias@test2.de
 }
 
 body:json {
   {
-    "userEmail": "selina_fehn@web.de"
+    
   }
 }
