@@ -5,7 +5,12 @@ meta {
 }
 
 post {
-  url: {{baseURL}}/cartitems
+  url: {{baseURL}}/cartitem?userEmail=tobias@test.de&isbn=321454885
   body: none
   auth: none
+}
+
+params:query {
+  userEmail: tobias@test.de
+  isbn: 321454885
 }
