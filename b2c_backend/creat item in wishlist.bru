@@ -1,0 +1,16 @@
+meta {
+  name: creat item in wishlist
+  type: http
+  seq: 18
+}
+
+post {
+  url: {{baseURL}}/wishlistitem?userEmail=tobias@test.de&isbn=0002005018
+  body: none
+  auth: none
+}
+
+params:query {
+  userEmail: tobias@test.de
+  isbn: 0002005018
+}

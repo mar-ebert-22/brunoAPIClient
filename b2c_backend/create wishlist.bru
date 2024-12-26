@@ -1,0 +1,15 @@
+meta {
+  name: create wishlist
+  type: http
+  seq: 17
+}
+
+post {
+  url: {{baseURL}}/wishlist?userEmail=tobias@test.de
+  body: none
+  auth: none
+}
+
+params:query {
+  userEmail: tobias@test.de
+}
